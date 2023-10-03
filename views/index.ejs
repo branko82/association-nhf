@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>Udruženje odgajivača golubova Niških visokoletača</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="accociation-union-nhf.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fa fa-home"></i>HOME</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-cogs"></i> O UDRUŽENJU</a>
+            <a href="#history" class="w3-bar-item w3-button"><i class="fa fa-th-list"></i> ISTORIJA</a>
+            <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-group"></i> ČLANSTVO</a>
+            <a href="#rules" class="w3-bar-item w3-button"><i class="fa fa-book"></i> PRAVILNIK</a>
+            <a href="#results" class="w3-bar-item w3-button"><i class="fa fa-graduation-cap"></i> REZULTATI</a>
+            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Zatvori ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">O UDRUŽENJU</a>
+    <a href="#history" onclick="w3_close()" class="w3-bar-item w3-button">ISTORIJA</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">ČLANSTVO</a>
+    <a href="#rules" onclick="w3_close()" class="w3-bar-item w3-button">PRAVILNIK</a>
+    <a href="#results" onclick="w3_close()" class="w3-bar-item w3-button">REZULTATI</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small w3-hide-medium">Udruženje odgajivača golubova Niških visokoletača</span><br>
+        <span class="w3-xxlarge w3-hide-large">Udruženje odgajivača golubova Niških visokoletača</span><br>
+        <span class="w3-large">Udruženje je nastalo kao napor i zalaganje nekolicine za očuvanje i dalje unapređivanje golubova Niških visokoletača.</span>
+        <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Saznajte više</a></p>
+    </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center">Udruženje odgajivača golubova Niških visokoletača</h3>
+    <p class="w3-center w3-large">Ukratko o nastanku i ciljevima Udruženja</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+        <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Počeci</p>
+        <p><%= about.history %></p>
+    </div>
+    <div class="w3-quarter">
+        <i class="fa fa-rocket w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Misija</p>
+        <p><%= about.mission %></p>
+    </div>
+    <div class="w3-quarter">
+        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Cilj</p>
+        <p><%= about.aim %></p>
+    </div>
+    <div class="w3-quarter">
+        <i class="fa fa-coffee w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Druženje</p>
+        <p><%= about.association %></p>
+    </div>
+</div>
+
+<!-- History Section -->
+<div class="w3-container w3-dark-grey" style="padding:128px 16px" id="history">
+    <div class="w3-row-padding">
+        <h3>Kratka istorija Niskog visokoletača</h3>
+        <% history.sections.forEach(function(section) { %>
+        <p><%= section.text %></p>
+        <% }); %>
+        <p>Poreklo: <%= history.origin %></p>
+        <p>Grupa: <%= history.group %></p>
+    </div>
+    <div class="w3-row-padding">
+        <h3>Naziv i podela po bojama</h3>
+        <table class="w3-table-all w3-hoverable">
+            <% var i=1; characteristics.types.forEach(function(type) { %>
+            <tr class="w3-dark-grey w3-hover-black">
+                <td><%= i%>. <%= type.name %> <%=type.color %><%i++;%></td>
+                <td><%= type.description %></td>
+            </tr>
+            <% }); %>
+        </table>
+    </div>
+    <div class="w3-row-padding">
+        <h3>Karakteristike:</h3>
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+                <tr class="w3-dark-grey">
+                    <th>Oznaka rase</th>
+                    <th>Manje greške</th>
+                    <th>Veće greške</th>
+                </tr>
+            </thead>
+            <% var i=1; characteristics.properties.forEach(function(property) { %>
+                <tr class="w3-dark-grey w3-hover-black">
+                    <td><%= i%>. <%= property.name %> - <%= property.description %><%i++;%></td>
+                    <td><%= property.lessMistakes %></td>
+                    <td><%= property.biggerMistakes %></td>
+                </tr>
+            <% }); %>
+        </table>
+        <% characteristics.sections.forEach(function(section) { %>
+        <p><%= section.text %></p>
+        <% }); %>
+    </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">Članovi Udruženja</h3>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <% members.forEach(function(member) { %>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <p><i class="fa fa-ellipsis-v"></i> <%= member.nickName %></p>
+            <div class="w3-container">
+                <h4><i class="fa fa-user"></i> <%= member.name %></h4>
+                <p class="w3-opacity"><%= member.status %></p>
+                <p><i class="fa fa-address-card"></i> <%= member.place %></p>
+                <p><i class="fa fa-phone-square"></i> <%= member.phone %></p>
+                <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-id-badge"></i> <%= member.id %></button></p>
+            </div>
+        </div>
+    </div>
+    <% }); %>
+    </div>
+</div>
+
+<!-- Rule Book Section -->
+<div class="w3-container" style="padding:128px 16px" id="rules">
+    <p class="w3-center w3-large">Udruženje odgajivača golubova Niških visokoletača Republike Srbije sa sedištem u Nišu za sprovođenje takmičenja u dužini leta, propagandnih i ostalih takmičenja koja ovo udruženje zvanično priređuje, donosi sledeće:</p>
+    <h3 class="w3-center">TAKMIČARSKI PRAVILNIK</h3>
+    <% rules.forEach(function(rule) { %>
+    <p class="w3-center w3-large"> <%= rule.name %></p>
+        <% rule.listOfArticles.forEach(function(article) { %>
+        <p class="w3-center w3-medium"></i> <%= article.name %></p>
+        <p class="w3-center w3-medium"></i> <%= article.description %></p>
+        <% }); %>
+    <% }); %>
+</div>
+
+<!-- Results Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="results">
+    <h3>REZULTATI</h3>
+    <p class="w3-large">Najbolji letački rezultati:</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <% results.forEach(function(result) { %>
+        <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32"><%= result.time %></li>
+                <li class="w3-padding-16"><%= result.owner %></li>
+                <li class="w3-padding-16"><%= result.date %></li>
+            </ul>
+        </div>
+        <% }); %>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">Kontakt</h3>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-half">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Adresa: Hercegovačka bb, 18000 Niš, Srbija</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefon: +381 654551818</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nvlnis2019@gmail.com</p>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Vrh strane</a>
+    <div class="w3-xlarge w3-section">
+        <p>Zvanička Fejsbuk strana: <a href="https://www.facebook.com/groups/995707750552641/" <i class="fa fa-facebook-official w3-hover-opacity"></i></a></p>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p>Autor: <a class="w3-hover-text-green">Branislav Čolaković</a></p>
+</footer>
+ 
+<script type="text/javascript" src="accociation-union-nhf.js"></script>
+</body>
+</html>
+

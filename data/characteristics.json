@@ -1,0 +1,211 @@
+{
+    "types" : [
+        {
+            "name" : "Arap",
+            "color" : "(crna)",
+            "description" : "Klot (jednobojni), belošpicasti i belošpicasti belobradasti, kljun bele ili crne boje"
+        },
+        {
+            "name" : "Bakarija",
+            "color" : "(crvena)",
+            "description" : "Klot, belošpicasti i belošpicasti belobradasti, kljun bele boje"
+        },
+        {
+            "name" : "Kanalija",
+            "color" : "(žuta)",
+            "description" : "Klot, belošpicasti i belošpicasti belobradasti, kljun bele boje"
+        },
+        {
+            "name" : "Belan",
+            "color" : "(bela)",
+            "description" : "Klot, kljun bele boje"
+        },
+        {
+            "name" : "Pirilija",
+            "color" : "(bela sa drugim bojama)",
+            "description" : "Sitno prskani, kljun bele, plavičaste ili svetlomrke boje"
+        },
+        {
+            "name" : "Gugutan",
+            "color" : "(plava)",
+            "description" : "Klot sa crnim kajišima (krilne pruge), klot sa crvenim kajišem, belošpicasti i belošpicasti belobradasti, kljun crne boje"
+        },
+        {
+            "name" : "Ermeš",
+            "color" : "(žuto zelena)",
+            "description" : "Klot sa tamnim kajišem, klot sa crvenim ili žutim kajišem, klot sa pulobima na krilima štitovima, belošpicasti i belošpicasti belobradasti, kljun mrke boje"
+        },
+        {
+            "name" : "Silver",
+            "color" : "(svetlo-mutna, crna, crvena, žuta, plava, modra ili žuto-zelena)",
+            "description" : "Klot sa tamnim kajišem, belošpicasti i belošpicasti belobradasti, kljun crn, plavičasti, mrk ili svetlo mrke boje"
+        },
+        {
+            "name" : "Tekir",
+            "color" : "(modra)",
+            "description" : "Klot, klot šumski (sa pulovim na krilnim štitovima i crnim ili crvenim kajiševima-krilnim prugama), klot sa crvenim krilima štitovima, belošpicasti, belošpicasti i belošpicasti belobradasti, kljun crne ili mrke boje, kod belobradasti donji bele boje"
+        },
+        {
+            "name" : "Mavija",
+            "color" : "(modra, plava, tamnozelena i čokoladna)",
+            "description" : "Klot, klot sa pulovima na klinim štitovima, belešpicasti i belošpicasti belobradasti, kljun bele boje"
+        },
+        {
+            "name" : "Zelenac",
+            "color" : "(prljavo crvena)",
+            "description" : "Klot sa tamnim kajišem, belošpicasti i belošpicasti belebradasti, kljun mrke boje"
+        },
+        {
+            "name" : "Naudija",
+            "color" : "(crno crvena)",
+            "description" : "Klot, belošpicasti i belošpicasti belobradasti, kljun mrke boje"
+        },
+        {
+            "name" : "Karabaš",
+            "color" : "(prskani svih boja)",
+            "description" : "Beli priskani crnom, crvenom, plavom, žutom, modrom ili čokoladnom bojom, crni, crveni, žuti, plavi ili modri prskani belom bojom, mešavima više boja sa učešćem ble boje, kljun crne, bele, mrke i svetlo mrke ili plavičaste boje"
+        },
+        {
+            "name" : "Čekal",
+            "color" : "(kombinacija crne, modre i plave sa belom)",
+            "description" : "Beloglavci sa belim špicevima i šarenim repom, šarenoglavi sa belim špicevima i šarenim repom, kljun bele boje"
+        },
+        {
+            "name" : "Peštanac",
+            "color" : "(kombinacija crne, crvene, modre, plave i žute sa belom)",
+            "description" : "U boji sa belom glavom do ćube - sa mogućom pupkom (mrljom) u odgovarajućoj boji na temenu glave, belim podvratkom grlom i podgrlom i belim krilima, kljub bele boje"
+        },
+        {
+            "name" : "Amelija",
+            "color" : "(kombinacija svih boja sa belim)",
+            "description" : "Beo sa srcastom mrljom na prednjem delu leđa, kljun bele boje"
+        }
+    ],
+    "properties" : [
+        {
+            "name" : "Glava",
+            "description" : "srazmerno veličini tela, okruglaste ili duguljaste",
+            "lessMistakes" : "Premale",
+            "biggerMistakes" : "Prevelika, pločasta, jako izdužena"
+        },
+        {
+            "name" : "Kljun",
+            "description" : "srednje dužine, puniji (deblji i širi) sa gornje strane blago povijen ka vrhu, boje bele, crne, plavičaste, mrke, svetlo-mrke",
+            "lessMistakes" : "Prekratak, predebeo",
+            "biggerMistakes" : "Tanak, dugačak, šareno obojen"
+        },
+        {
+            "name" : "Nozdrve",
+            "description" : "srazmerno veličini kljuna, široke, mekane, sive, bele, parinirane, otvor nozdrva primetno slobodan",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Premale, preširoke, smežurane, nesimetrične, glatke, grube"
+        },
+        {
+            "name" : "Čelo",
+            "description" : "široko, u profilu blago ispupčeno",
+            "lessMistakes" : "Uzano, dugačko",
+            "biggerMistakes" : "Ulegnuto"
+        },
+        {
+            "name" : "Teme",
+            "description" : "zaobljeno, široko",
+            "lessMistakes" : "Uže",
+            "biggerMistakes" : "Pljosnato, ulegnuto, čvornovato"
+        },
+        {
+            "name" : "Podbradak",
+            "description" : "u luku prelazi u grlo i podgrlo",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Naglo se utapa u grlo i podgrlo, jako uvučeno"
+        },
+        {
+            "name" : "Oči",
+            "description" : "biseraste, ispupčene, krupne, belih , sitnozrnaste, crvenkastih, kod beloglavih tamne.",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Žuti ili crven iris, crvene krupnozrnaste tačkice ili crtice na irisu, šarene ili crne"
+        },
+        {
+            "name" : "Okviri",
+            "description" : "glatki, nezategnuti, mekani, kod belorepca i belokljunca arape i bakarija dvostruki i nešto širi",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Uzani kod belokljunaca, smežužurani, crvene boje"
+        },
+        {
+            "name" : "Ćuba",
+            "description" : "usađena na zatiljku, šiljate ili malo kockasta, navijena šira (tzv.nokat)",
+            "lessMistakes" : "Kockasta, navijena na stranu",
+            "biggerMistakes" : "Široka, priljubljena uz potiljak"
+        },
+        {
+            "name" : "Vrat",
+            "description" : "srednje dužine, izdiže se vertikalno iznad prsiju i prema glavi blago sužava",
+            "lessMistakes" : "Kraći",
+            "biggerMistakes" : "Predugačak, tanak, jako povijen napred"
+        },
+        {
+            "name" : "Grudi",
+            "description" : "široke, malo ispupčene, zaobljene",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Uzane, viseće"
+        },
+        {
+            "name" : "Leđa",
+            "description" : "široka, blago zaobljena, prema repu malo nagnuta",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Uzana, koščasta, na zadnjem delu leđa jako sužena"
+        },
+        {
+            "name" : "Trbuh",
+            "description" : "širok, dubok zaobljen čvrstim grudima mišićima",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Prešilok, mršav, koščast"
+        },
+        {
+            "name" : "Krila",
+            "description" : "dobro priljubljeno uz telo, jakih ramena, krila sa deseti više letnih pera, nešto kraćih od repa i bez ukrštanja na kraju",
+            "lessMistakes" : "Držanje letnih pera ispod repa",
+            "biggerMistakes" : "Mlitavo opuštena krila"
+        },
+        {
+            "name" : "Butine",
+            "description" : "snažne, mišićave, srednje dužine",
+            "lessMistakes" : "Kratke",
+            "biggerMistakes" : "Mršave, dugačke, jako upravljene"
+        },
+        {
+            "name" : "Noge",
+            "description" : "srednje veličine, snažne, neoperjane, crvene boje",
+            "lessMistakes" : "Operjane (čarapaste)",
+            "biggerMistakes" : "Krive, suvih kolenica, jako visoke"
+        },
+        {
+            "name" : "Prsti i nokti",
+            "description" : "snažni i srazmerne dužine crvene boje sa dugačkim i oštrim noktima boje kljuna",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Jako izraženi zglobovi, raznobojni nokti"
+        },
+        {
+            "name" : "Rep",
+            "description" : "dugačak sa 12-16 širokih pribranih pera, koja se u letu šire u lepezu, kod nekih sa prugom na kraju repa",
+            "lessMistakes" : "Prekratak",
+            "biggerMistakes" : "Rastrešen, mlitav, lepezast ili sa perima nejednake dužine ili dvostrukim perjem"
+        },
+        {
+            "name" : "Perje",
+            "description" : "sređeno i složeno po telu u skladu sa fukcijama, po glavi najsitnije, a na leđima i grudima bogato toplotno preje na krilnim štitovima čvrsto pripijema i složena u odgovarajućim određenim bojama i šarama, letna, nadletna i repna pera široka, neizrezanih zastavica, sa čvrsto usađenim kopljima, perje je vitko, sjajno i patinirano, po vratu i grudima izrazito sjajno sa prelamanjem boja u duginom spektaru",
+            "lessMistakes" : "",
+            "biggerMistakes" : "Nerogušno, krto, suvo, izrezano, nesređeno, deformisano"
+        }
+    ],
+    "sections" : [
+        {
+            "text" : "Dužina i krupnoća goluba, visina vrata ili nogu, još uvek, ali kod znatno manjeg broja primetaka, nezadovoljav ukuse i eksterijerne težnje današnjih odgajivača, te se kao pozitivna tendencija ispoljava sve većim zahtevima da glave budu okruglaste, kljunovi manji i deblji, oči krupnije sa širim okvirima, veće dužine tela, noge niže itd. No, to je perspektivni rad i rezultate ne možemo očekivati tako skoro."
+        },
+        {
+            "text" : "Međutim, sada najvažniji posao usmerava se na održanje i poboljšanje letnih karekteristika. Odabiranjem i terenjem u okviru čiste rase, proizvode se golubovi za isključivo sportska takmičenja i za postizanje vrhunskih rezultata u pogledu dužine leta. Kod toga, obavezno je prisustvo ostalih elemenata leta, koji se uglavnom svode na tih, dug i visok let bez pojave nasedanja ili obrtanje."
+        },
+        {
+            "text" : "I na kraju, takođe značajna osobina Niški visokoletača mora i posle svakog najdužeg leta vrati u svoj golubarnik. U vezi sa tim, za njega se kaže: „On je moj i u vazduhu i na zemlji“."
+        }
+    ]
+}
