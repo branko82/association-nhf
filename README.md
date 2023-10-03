@@ -8,15 +8,10 @@ The App represents the web page for Community: Udruženje odgajivača golubova N
 
 ### How do I get set up? ###
 
-* Install Node.js, Git, Heroku
+* Install Node.js, Git
 
 ### Build/Deployment guidelines ###
 * Get packages:
 `npm install`
 * Local build/deployment:
 `node server`
-* Heroku build/deployment:
-`git push heroku master`
-* Heroku open app:
-`heroku open`
-
